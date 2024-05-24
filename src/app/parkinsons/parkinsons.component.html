@@ -1,0 +1,91 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+    <div class="form-group">
+        <label for="mdvp_fo_hz">mdvp_fo_hz</label>
+        <input type="number" formControlName="mdvp_fo_hz" id="mdvp_fo_hz" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_fhi_hz">mdvp_fhi_hz</label>
+        <input type="number" formControlName="mdvp_fhi_hz" id="mdvp_fhi_hz" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_flo_hz">mdvp_flo_hz</label>
+        <input type="number" formControlName="mdvp_flo_hz" id="mdvp_flo_hz" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_jitter_in_percent">mdvp_jitter_in_percent</label>
+        <input type="number" formControlName="mdvp_jitter_in_percent" id="mdvp_jitter_in_percent" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_jitter_abs">mdvp_jitter_abs</label>
+        <input type="number" formControlName="mdvp_jitter_abs" id="mdvp_jitter_abs" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_rap">mdvp_rap</label>
+        <input type="number" formControlName="mdvp_rap" id="mdvp_rap" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_ppq">mdvp_ppq</label>
+        <input type="number" formControlName="mdvp_ppq" id="mdvp_ppq" required>
+    </div>
+    <div class="form-group">
+        <label for="jitter_ddp">jitter_ddp</label>
+        <input type="number" formControlName="jitter_ddp" id="jitter_ddp" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_shimmer">mdvp_shimmer</label>
+        <input type="number" formControlName="mdvp_shimmer" id="mdvp_shimmer" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_shimmer_db">mdvp_shimmer_db</label>
+        <input type="number" formControlName="mdvp_shimmer_db" id="mdvp_shimmer_db" required>
+    </div>
+    <div class="form-group">
+        <label for="shimmer_apq3">shimmer_apq3</label>
+        <input type="number" formControlName="shimmer_apq3" id="shimmer_apq3" required>
+    </div>
+    <div class="form-group">
+        <label for="shimmer_apq5">shimmer_apq5</label>
+        <input type="number" formControlName="shimmer_apq5" id="shimmer_apq5" required>
+    </div>
+    <div class="form-group">
+        <label for="mdvp_apq">mdvp_apq</label>
+        <input type="number" formControlName="mdvp_apq" id="mdvp_apq" required>
+    </div>
+    <div class="form-group">
+        <label for="shimmer_dda">shimmer_dda</label>
+        <input type="number" formControlName="shimmer_dda" id="shimmer_dda" required>
+    </div>
+    <div class="form-group">
+        <label for="nhr">nhr</label>
+        <input type="number" formControlName="nhr" id="nhr" required>
+    </div>
+    <div class="form-group">
+        <label for="hnr">hnr</label>
+        <input type="number" formControlName="hnr" id="hnr" required>
+    </div>
+    <div class="form-group">
+        <label for="rpde">rpde</label>
+        <input type="number" formControlName="rpde" id="rpde" required>
+    </div>
+    <div class="form-group">
+        <label for="dfa">dfa</label>
+        <input type="number" formControlName="dfa" id="dfa" required>
+    </div>
+    <div class="form-group">
+        <label for="spread1">spread1</label>
+        <input type="number" formControlName="spread1" id="spread1" required>
+    </div>
+    <div class="form-group">
+        <label for="spread2">spread2</label>
+        <input type="number" formControlName="spread2" id="spread2" required>
+    </div>
+    <div class="form-group">
+        <label for="d2">d2</label>
+        <input type="number" formControlName="d2" id="d2" required>
+    </div>
+    <div class="form-group">
+        <label for="ppe">ppe</label>
+        <input type="number" formControlName="ppe" id="ppe" required>
+    </div>
+    <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>

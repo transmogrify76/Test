@@ -1,0 +1,44 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" formControlName="age" id="age" required>
+    </div>
+    <div class="form-group">
+        <label for="total_bilirubin">Total Bilirubin</label>
+        <input type="number" formControlName="total_bilirubin" id="total_bilirubin" required>
+    </div>
+    <div class="form-group">
+        <label for="direct_bilirubin">Direct Bilirubin</label>
+        <input type="number" formControlName="direct_bilirubin" id="direct_bilirubin" required>
+    </div>
+    <div class="form-group">
+        <label for="alkaline_phosphotase">Alkaline Phosphotase</label>
+        <input type="number" formControlName="alkaline_phosphotase" id="alkaline_phosphotase" required>
+    </div>
+    <div class="form-group">
+        <label for="alamine_aminotransferase">Alamine Aminotransferase</label>
+        <input type="number" formControlName="alamine_aminotransferase" id="alamine_aminotransferase" required>
+    </div>
+    <div class="form-group">
+        <label for="aspartate_aminotransferase">Aspartate Aminotransferase</label>
+        <input type="number" formControlName="aspartate_aminotransferase" id="aspartate_aminotransferase" required>
+    </div>
+    <div class="form-group">
+        <label for="total_protiens">Total Proteins</label>
+        <input type="number" formControlName="total_protiens" id="total_protiens" required>
+    </div>
+    <div class="form-group">
+        <label for="albumin">Albumin</label>
+        <input type="number" formControlName="albumin" id="albumin" required>
+    </div>
+    <div class="form-group">
+        <label for="albumin_and_globulin_ratio">Albumin and Globulin Ratio</label>
+        <input type="number" formControlName="albumin_and_globulin_ratio" id="albumin_and_globulin_ratio" required>
+    </div>
+    <div class="form-group">
+        <label for="gender">Gender</label>
+        <input type="text" formControlName="gender" id="gender" required>
+    </div>
+    <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>
+

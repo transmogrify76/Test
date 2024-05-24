@@ -45,5 +45,48 @@ export class ApiService {
     `aanemia=${aanemia}`;
     return this.http.post<any>(url, {});
   }
+  parkinsons(mdvpFoHz: number, mdvpFhiHz: number, mdvpFloHz: number, mdvpJitterInPercent: number, mdvpJitterAbs: number, mdvpRap: number, mdvpPpq: number, jitterDdp: number, mdvpShimmer: number, mdvpShimmerDb: number, shimmerApq3: number, shimmerApq5: number, mdvpApq: number, shimmerDda: number, nhr: number, hnr: number, rpde: number, dfa: number, spread1: number, spread2: number, d2: number, ppe: number) {
+    const url = `${this.apiUrl}/parkinsons/?` +
+    `mdvp_fo_hz=${mdvpFoHz}&` +
+    `mdvp_fhi_hz=${mdvpFhiHz}&` +
+    `mdvp_flo_hz=${mdvpFloHz}&` +
+    `mdvp_jitter_in_percent=${mdvpJitterInPercent}&` +
+    `mdvp_jitter_abs=${mdvpJitterAbs}&` +
+    `mdvp_rap=${mdvpRap}&` +
+    `mdvp_ppq=${mdvpPpq}&` +
+    `jitter_ddp=${jitterDdp}&` +
+    `mdvp_shimmer=${mdvpShimmer}&` +
+    `mdvp_shimmer_db=${mdvpShimmerDb}&` +
+    `shimmer_apq3=${shimmerApq3}&` +
+    `shimmer_apq5=${shimmerApq5}&` +
+    `mdvp_apq=${mdvpApq}&` +
+    `shimmer_dda=${shimmerDda}&` +
+    `nhr=${nhr}&` +
+    `hnr=${hnr}&` +
+    `rpde=${rpde}&` +
+    `dfa=${dfa}&` +
+    `spread1=${spread1}&` +
+    `spread2=${spread2}&` +
+    `d2=${d2}&` +
+    `ppe=${ppe}`;
+    return this.http.post<any>(url, {});
+}
+
+
+liver(age: number, total_bilirubin: number, direct_bilirubin: number, alkaline_phosphotase: number, alamine_aminotransferase: number, aspartate_aminotransferase: number, total_protiens: number, albumin: number, albumin_and_globulin_ratio: number, gender: string) {
+  const url = `${this.apiUrl}/liver/?` +
+  `age=${age}&` +
+  `total_bilirubin=${total_bilirubin}&` +
+  `direct_bilirubin=${direct_bilirubin}&` +
+  `alkaline_phosphotase=${alkaline_phosphotase}&` +
+  `alamine_aminotransferase=${alamine_aminotransferase}&` +
+  `aspartate_aminotransferase=${aspartate_aminotransferase}&` +
+  `total_protiens=${total_protiens}&` +
+  `albumin=${albumin}&` +
+  `albumin_and_globulin_ratio=${albumin_and_globulin_ratio}&` +
+  `gender=${gender}`;
+  return this.http.post<any>(url, {});
+}
+
 }
 
