@@ -10,8 +10,6 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-
-
       diabetesData(age: number, pregnancies: number, glucose: number, bloodPressure: number, skinThickness: number, insulin: number, bmi: number, diabetesPedigreeFunction: number): Observable<any> {
         const url = `${this.apiUrl}/diabetes/?age=${age}&pregnancies=${pregnancies}&glucose=${glucose}&blood_pressure=${bloodPressure}&skin_thickness=${skinThickness}&insulin=${insulin}&bmi=${bmi}&diabetes_pedigree_function=${diabetesPedigreeFunction}`;
         return this.http.post<any>(url, {});

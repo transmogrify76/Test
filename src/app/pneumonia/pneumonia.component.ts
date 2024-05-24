@@ -37,7 +37,7 @@ export class PneumoniaComponent {
     this.apiService.braintumor(formData)
       .subscribe(
         (response) => {
-          // Assuming the API returns the result of brain tumor detection
+          
           console.log('API Response:', response);
         },
         error => {
