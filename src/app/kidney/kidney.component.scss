@@ -1,0 +1,52 @@
+/* Container for the form */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Individual form fields */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styles */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Input field styles */
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styles */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Disabled button styles */
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Optional: Hover effect for buttons */
+  button[type="submit"]:not([disabled]):hover {
+    background-color: #0056b3;
+  }
+  

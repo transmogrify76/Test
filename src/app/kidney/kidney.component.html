@@ -1,0 +1,100 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" formControlName="age" id="age" required>
+    </div>
+    <div class="form-group">
+      <label for="blood_pressure">Blood Pressure</label>
+      <input type="number" formControlName="blood_pressure" id="blood_pressure" required>
+    </div>
+    <div class="form-group">
+      <label for="specific_gravity">Specific Gravity</label>
+      <input type="number" formControlName="specific_gravity" id="specific_gravity" required>
+    </div>
+    <div class="form-group">
+      <label for="albumin">Albumin</label>
+      <input type="number" formControlName="albumin" id="albumin" required>
+    </div>
+    <div class="form-group">
+      <label for="sugar">Sugar</label>
+      <input type="number" formControlName="sugar" id="sugar" required>
+    </div>
+    <div class="form-group">
+      <label for="red_blood_cells">Red Blood Cells</label>
+      <input type="text" formControlName="red_blood_cells" id="red_blood_cells" required>
+    </div>
+    <div class="form-group">
+      <label for="pus_cell">Pus Cell</label>
+      <input type="text" formControlName="pus_cell" id="pus_cell" required>
+    </div>
+    <div class="form-group">
+      <label for="pus_cell_clumps">Pus Cell Clumps</label>
+      <input type="text" formControlName="pus_cell_clumps" id="pus_cell_clumps" required>
+    </div>
+    <div class="form-group">
+      <label for="bacteria">Bacteria</label>
+      <input type="text" formControlName="bacteria" id="bacteria" required>
+    </div>
+    <div class="form-group">
+      <label for="blood_glucose_random">Blood Glucose Random</label>
+      <input type="number" formControlName="blood_glucose_random" id="blood_glucose_random" required>
+    </div>
+    <div class="form-group">
+      <label for="blood_urea">Blood Urea</label>
+      <input type="number" formControlName="blood_urea" id="blood_urea" required>
+    </div>
+    <div class="form-group">
+      <label for="serum_creatinine">Serum Creatinine</label>
+      <input type="number" formControlName="serum_creatinine" id="serum_creatinine" required>
+    </div>
+    <div class="form-group">
+      <label for="sodium">Sodium</label>
+      <input type="number" formControlName="sodium" id="sodium" required>
+    </div>
+    <div class="form-group">
+      <label for="potassium">Potassium</label>
+      <input type="number" formControlName="potassium" id="potassium" required>
+    </div>
+    <div class="form-group">
+      <label for="haemoglobin">Haemoglobin</label>
+      <input type="number" formControlName="haemoglobin" id="haemoglobin" required>
+    </div>
+    <div class="form-group">
+      <label for="packed_cell_volume">Packed Cell Volume</label>
+      <input type="number" formControlName="packed_cell_volume" id="packed_cell_volume" required>
+    </div>
+    <div class="form-group">
+      <label for="white_blood_cell_count">White Blood Cell Count</label>
+      <input type="number" formControlName="white_blood_cell_count" id="white_blood_cell_count" required>
+    </div>
+    <div class="form-group">
+      <label for="red_blood_cell_count">Red Blood Cell Count</label>
+      <input type="number" formControlName="red_blood_cell_count" id="red_blood_cell_count" required>
+    </div>
+    <div class="form-group">
+      <label for="hypertension">Hypertension</label>
+      <input type="text" formControlName="hypertension" id="hypertension" required>
+    </div>
+    <div class="form-group">
+      <label for="diabetes_mellitus">Diabetes Mellitus</label>
+      <input type="text" formControlName="diabetes_mellitus" id="diabetes_mellitus" required>
+    </div>
+    <div class="form-group">
+      <label for="coronary_artery_disease">Coronary Artery Disease</label>
+      <input type="text" formControlName="coronary_artery_disease" id="coronary_artery_disease" required>
+    </div>
+    <div class="form-group">
+      <label for="appetite">Appetite</label>
+      <input type="text" formControlName="appetite" id="appetite" required>
+    </div>
+    <div class="form-group">
+      <label for="peda_edema">Peda Edema</label>
+      <input type="text" formControlName="peda_edema" id="peda_edema" required>
+    </div>
+    <div class="form-group">
+      <label for="aanemia">Aanemia</label>
+      <input type="text" formControlName="aanemia" id="aanemia" required>
+    </div>
+    <button type="submit" [disabled]="!form.valid">Submit</button>
+  </form>
+  

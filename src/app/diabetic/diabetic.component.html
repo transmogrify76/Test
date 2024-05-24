@@ -1,0 +1,53 @@
+
+<body>
+<div class="card">
+  <div class="card-header">
+    <h2>Diabetes</h2>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" formControlName="age" id="age" required>
+        </div>
+        <div class="form-group">
+          <label for="pregnancies">Pregnancies</label>
+          <input type="number" formControlName="pregnancies" id="pregnancies" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="glucose">Glucose</label>
+          <input type="number" formControlName="glucose" id="glucose" required>
+        </div>
+        <div class="form-group">
+          <label for="blood_pressure">Blood Pressure</label>
+          <input type="number" formControlName="blood_pressure" id="blood_pressure" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="skin_thickness">Skin Thickness</label>
+          <input type="number" formControlName="skin_thickness" id="skin_thickness" required>
+        </div>
+        <div class="form-group">
+          <label for="insulin">Insulin</label>
+          <input type="number" formControlName="insulin" id="insulin" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bmi">BMI</label>
+          <input type="number" formControlName="bmi" id="bmi" required>
+        </div>
+        <div class="form-group">
+          <label for="diabetes_pedigree_function">Diabetes Pedigree Function</label>
+          <input type="number" formControlName="diabetes_pedigree_function" id="diabetes_pedigree_function" required>
+        </div>
+      </div>
+      <button type="submit" [disabled]="!form.valid">Submit</button>
+    </form>
+  </div>
+</div>
+</body>
