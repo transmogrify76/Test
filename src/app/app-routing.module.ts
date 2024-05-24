@@ -6,7 +6,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ParkinsonsComponent } from './parkinsons/parkinsons.component';
 import { LiverComponent } from './liver/liver.component';
-
+import { BraintumorComponent } from './braintumor/braintumor.component';
+import { PneumoniaComponent } from './pneumonia/pneumonia.component';
+import { AlzheimersComponent } from './alzheimers/alzheimers.component';
+import { TuberculosisComponent } from './tuberculosis/tuberculosis.component';
 
 const routes: Routes = [
 
@@ -35,6 +38,21 @@ const routes: Routes = [
   component: LiverComponent
   },
 
+  { path: 'braintumor' ,
+  component: BraintumorComponent
+  },
+
+  { path: 'pneumonia' ,
+  component: PneumoniaComponent
+  },
+  
+  { path: 'tb' ,
+  component: TuberculosisComponent
+  },
+
+  { path: 'alzhemiers' ,
+  component: AlzheimersComponent
+  },
 ];
 
 @NgModule({

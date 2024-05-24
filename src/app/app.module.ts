@@ -10,6 +10,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ParkinsonsComponent } from './parkinsons/parkinsons.component';
 import { LiverComponent } from './liver/liver.component';
+import { BraintumorComponent } from './braintumor/braintumor.component';
+import { PneumoniaComponent } from './pneumonia/pneumonia.component';
+import { TuberculosisComponent } from './tuberculosis/tuberculosis.component';
+import { AlzheimersComponent } from './alzheimers/alzheimers.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { LiverComponent } from './liver/liver.component';
     NavbarComponent,
     HomeComponent,
     ParkinsonsComponent,
-    LiverComponent
+    LiverComponent,
+    BraintumorComponent,
+    PneumoniaComponent,
+    TuberculosisComponent,
+    AlzheimersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<div class="ui">
+    <div class="upload-box">
+        <div *ngIf="imageUrl" class="image-container">
+        <img [src]="imageUrl" alt="Uploaded Image">
+        </div>   
+    </div>
+</div>
+<div class="ui2">
+    <input type="file" (change)="onFileSelected($event)" />
+    <button (click)="onUpload()">Upload</button>
+</div>
+
+
+  
+  
